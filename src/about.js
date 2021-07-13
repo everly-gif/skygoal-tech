@@ -88,25 +88,7 @@ function showSlides(n) {
   
   dots[slideIndex-1].className += " acts";
 }
-// var sIndex = 0;
-// Slides();
 
-// function Slides() {
-//   var i;
-//   var a_slides = document.getElementsByClassName("mySlides");
-//   var a_dots = document.getElementsByClassName("dot");
-//   for (i = 0; i < a_slides.length; i++) {
-//     a_slides[i].style.display = "none";  
-//   }
-//   sIndex++;
-//   if (sIndex > a_slides.length) {sIndex = 1}    
-//   for (i = 0; i < a_dots.length; i++) {
-//     a_dots[i].className = a_dots[i].className.replace(" acts", "");
-//   }
-//   a_slides[sIndex-1].style.display = "block";  
-//   a_dots[sIndex-1].className += " acts";
-//   setTimeout(Slides, 2000); // Change image every 2 seconds
-// }
 window.addEventListener('scroll',()=>{
     let anime=document.querySelectorAll('.reveal');
     let size=window.innerHeight;
