@@ -15,8 +15,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     
+    
+
  
 </head>
 <body>
@@ -196,7 +197,7 @@
     
     <div class="partners reveal">
         
-        <div>
+        <!-- <div>
         <h1 style="text-align:center;">Associated With</h1>
         </div>
         <div class="partners-1 slider">
@@ -220,15 +221,28 @@
             height="80px"></div>
         </div>
             
-        </div>
+        </div> -->
+        <div class="main">
+        <div class="heading"><h1>Associated</h1><h1> With</h1></div></div><br>
+        <div class="owl-carousel">
+            <div class="item"><img src="Icons/clients/client1.png" alt="Owl Image"></div>
+            <div class="item"><img src="Icons/clients/client2.png" alt="Owl Image"></div>
+            <div class="item"><img id="aws" src="Icons/clients/client3.png" alt="Owl Image"></div>
+            <div class="item"><img src="Icons/clients/client4.png" alt="Owl Image"></div>
+            <div class="item"><img src="Icons/clients/client5.png" alt="Owl Image"></div>
+            <div class="item"><img src="Icons/clients/client6.png" alt="Owl Image"></div>
+            <div class="item"><img src="Icons/clients/client7.png" alt="Owl Image"></div>
+            <div class="item"><img src="Icons/clients/client8.png" alt="Owl Image"></div>
+            <div class="item"><img src="Icons/clients/client9.png" alt="Owl Image"></div>
+          </div>
     </div>
     
     <!--Form-->
     <div class="form-cont reveal">
-        <form class="join-form">
+        <form class="join-form" method="post" name="Newsletter" id="Newsletter">
             <h2>Join SkyGoal today!</h2><br>
-            <h5 style="font-weight: normal;text-align:center;">Sign up to receive updates from us, and be the first to know about sales,<br> promotions and more.</h5><br>
-            <div class="search-bar"><input type="email" placeholder="Enter your email" required><button type="submit"><div class="btn">Submit</div></button></div>
+            <h5 style="font-weight: normal; text-align: center;">Sign up to receive updates from us, and be the first to know about sales,<br>promotions and more.</h5><br>
+            <div class="search-bar"><input name="email" id="email" type="email" placeholder="Enter your email" required><button type="submit" name="submit"><div class="btn">Submit</div></button></div>
             <br>
         </form>
     </div>
@@ -274,7 +288,7 @@
            
                <p><img src="Icons/Address icon.png"> Address</p><p>India</p><p style="font-size: 12px;">Unit no. 21,<br> First floor, M.G. Commercial,<br> Complex, <br> Gollapudi. Vijayawada
                 521218</p><p >United States</p><p style="font-size: 12px;">16192 Coastal Highway<br>Lewes, DE 19958<br>
-                United States</p><p><img src="Icons/Contact-vector.png" width="15px" height="16px" style="padding-right:4px;">Call</p><p><a href="tel:18004193878">18004193878</a></p><p><img src="Icons/email icon.png"  style="padding-right:4px;">Email</p><p><a href="mailto:info@skygoal.education">info@skygoal.education</a></p>
+                United States</p><p><img src="Icons/Contact-vector.png" width="15px" height="16px" style="padding-right:4px;">Call</p><p><a href="tel:18004193878">18004193878</a></p><p><img src="Icons/email icon.png"  style="padding-right:4px;">Email</p><p><a href="mailto:sales@skygoaltech.com">sales@skygoaltech.com</a></p>
            
        </div>
        </div>
@@ -285,6 +299,7 @@
     
     <script src='src/script.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwTYSaPKuJ2at9mG0XpxScs-zypRZ9PCoQGvoQP5Gw0jQH09fhW6NVgKXSyXws5wIeI7w/exec'
        const form = document.forms['Instant Call']
@@ -295,7 +310,15 @@
            .then(response => console.log('Success!'),form.reset())
            .catch(error => console.error('Error!', error.message))
        })
-       
+       const scriptUL = 'https://script.google.com/macros/s/AKfycbyxAiHHroezV-X2VgJXfYozRM255ZOHyJf0vd58Q0--_RS5HZrINmY0e39rUn6COf0RBw/exec'
+        const Newsletter = document.forms['Newsletter']
+
+        Newsletter.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptUL, { method: 'POST', body: new FormData(Newsletter)})
+            .then(response => console.log('Success!'),Newsletter.reset())
+            .catch(error => console.error('Error!', error.message))
+        })
        function closeSelf (f) {
        var modal = document.getElementById("modal");
        f.submit();
@@ -309,35 +332,7 @@
       
        
        }
-       $(document).ready(function(){
-           $('.partners-1').slick({
-               slidesToShow:3,
-               slidesToScroll:1,
-               autoplay:true,
-               autoplaySpeed:500,
-               arrows:false,
-               dots:false,
-               pauseOn:false,
-               responsive: [
-                {
-                breakpoint: 944,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    
-                }
-                },
-                {
-                breakpoint: 716,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    
-                }
-                }
-            ]
-           });
-       })
+       
    </script>
 </body>
 </html>

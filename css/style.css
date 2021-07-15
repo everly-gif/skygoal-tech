@@ -306,19 +306,36 @@ button{
 
 /*partners css starts*/
 
-.partners-1{
+/* .partners-1{
     padding-top:60px ;
     display: flex;
     justify-content: space-between;
    
-}
+} */
 .partners{
     padding:120px;
+    
 }
-.partners-2{
+#aws{
+    width:60px;
+}
+.partners h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* .partners-2{
     display: flex;
     justify-content: space-around;
 
+} */ 
+
+.owl-carousel{
+    display: flex;
+    justify-content: space-between;
+}
+.owl-carousel img{
+    width:100px;
+    margin-right:10px;
 }
 /*partners css ends*/
 
@@ -638,9 +655,7 @@ footer p, footer a, footer h2{
     .join-form{
         width:400px;
     }
-    .partners h1{
-        font-size:30px;
-    }
+    
 }
 @media only screen and (max-width:435px){
     .join-form{
@@ -710,36 +725,63 @@ footer p, footer a, footer h2{
     }
 }
 
-.slick-slide{
-    margin:0 20px;
+@media only screen and (max-width:1264px){
+    .owl-carousel{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .owl-carousel img{
+        width:200px;
+    }
+    
 }
-.slick-slide img{
-    width:180px;
+@media only screen and (max-width:900px){
+    .owl-carousel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .owl-carousel img{
+
+        margin-bottom:10px;
+
+    }
+    
 }
-.slick-list{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin:0;
-    padding:0;
+@media only screen and (max-width:468px){
+    .owl-carousel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .owl-carousel img{
+
+        margin-bottom:10px;
+        width:100px;
+
+    }
+    
 }
-.slick-list:focus{
-    outline:none;
+@media only screen and (max-width:412px){
+ .partners {
+     padding: 10px;
+ }
+    
 }
-.slick-slide{
-    display: none;
-    float:left;
-    height:100px;
-    min-height:1px;
+.heading{
+    display: flex;
+    
 }
-.slick-slide img{
-  display:block;
+.heading h1{
+    margin-right:10px;
 }
-.slick-initialized, .slick-slide{
-    display:block;
-}
-@media only screen and (max-width:460px){
-    .slick-slide {
-       margin:0 50px;
-      }
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

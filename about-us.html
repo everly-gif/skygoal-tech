@@ -405,10 +405,10 @@
     </div>
     <!--Form-->
     <div class="form-cont reveal">
-        <form class="join-form">
+        <form class="join-form" method="post" name="Newsletter" id="Newsletter">
             <h2>Join SkyGoal today!</h2><br>
             <h5 style="font-weight: normal; text-align: center;">Sign up to receive updates from us, and be the first to know about sales,<br>promotions and more.</h5><br>
-            <div class="search-bar"><input type="email" placeholder="Enter your email" required><button type="submit"><div class="btn">Submit</div></button></div>
+            <div class="search-bar"><input name="email" id="email" type="email" placeholder="Enter your email" required><button type="submit" name="submit"><div class="btn">Submit</div></button></div>
             <br>
         </form>
     </div>
@@ -457,7 +457,7 @@
            
                <p><img src="Icons/Address icon.png"> Address</p><p>India</p><p style="font-size: 12px;">Unit no. 21,<br> First floor, M.G. Commercial,<br> Complex, <br> Gollapudi. Vijayawada
                 521218</p><p >United States</p><p style="font-size: 12px;">16192 Coastal Highway<br>Lewes, DE 19958<br>
-                United States</p><p><img src="Icons/Contact-vector.png" width="15px" height="16px" style="padding-right:4px;">Call</p><p><a href="tel:18004193878">18004193878</a></p><p><img src="Icons/email icon.png"  style="padding-right:4px;">Email</p><p><a href="mailto:info@skygoal.education">info@skygoal.education</a></p>
+                United States</p><p><img src="Icons/Contact-vector.png" width="15px" height="16px" style="padding-right:4px;">Call</p><p><a href="tel:18004193878">18004193878</a></p><p><img src="Icons/email icon.png"  style="padding-right:4px;">Email</p><p><a href="mailto:sales@skygoaltech.com">sales@skygoaltech.com</a></p>
            
        </div>
        </div>
@@ -517,7 +517,15 @@
             .then(response => console.log('Success!'),form.reset())
             .catch(error => console.error('Error!', error.message))
         })
-        
+        const scriptUL = 'https://script.google.com/macros/s/AKfycbyxAiHHroezV-X2VgJXfYozRM255ZOHyJf0vd58Q0--_RS5HZrINmY0e39rUn6COf0RBw/exec'
+        const Newsletter = document.forms['Newsletter']
+
+        Newsletter.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptUL, { method: 'POST', body: new FormData(Newsletter)})
+            .then(response => console.log('Success!'),Newsletter.reset())
+            .catch(error => console.error('Error!', error.message))
+        })
         function closeSelf (f) {
         var modal = document.getElementById("modal");
         f.submit();
