@@ -433,6 +433,89 @@ left:480px;
     width:394px;
     height:353px;
 }
+.cont-13{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:30px;
+    margin-top: 80px;
+    padding-top: 50px;
+}
+.cont-14{
+    text-align: center;
+}
+.cont-15{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cont-16{
+    padding: 30px;
+}
+.cont-17{
+    display: flex;
+    justify-content: space-evenly;
+}
+.inned{
+    position: absolute;
+    
+}
+/*form css starts*/
+
+.join-form, .join-form h2,.join-form h5, .join-form button{
+    background-color: #2A2742;
+    color:#FFFFFF;
+}
+.join-form input{
+    border-radius: 15px 0px 0px 15px;
+    padding:20px;
+    width: 60%;
+    border:none;
+}
+.join-form button{
+    border:none;
+    background-color:#D8445C;
+    padding: 20px;
+    border-radius: 0px 15px 15px 0px;
+    cursor:pointer;
+}
+.join-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:20px;
+    width: 50%;
+    height:300px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+input:focus{
+    outline: none;
+    border:none;
+}
+.form-cont input{
+    width:300px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFFFFF
+}
+/*form css ends*/
+
 /*footer css starts*/
 
 footer{
