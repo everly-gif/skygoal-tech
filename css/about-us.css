@@ -349,6 +349,92 @@ img {vertical-align: middle;}
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
+.about-us,.mission-1,.mission-2,.vision{
+    padding: 30px;
+}
+.about-us h1{
+     background: linear-gradient( to bottom, transparent 50%, #EEDCC9 50%); 
+     width:150px;
+    
+}
+.mission-2{
+    text-align: center;
+}
+.con{
+    padding: 20px;
+    padding-top: 80px;
+    margin-top: 180px;
+}
+.about-us img{
+    background: #EEDCC9 ; 
+}
+.mission{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.mission-1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+
+}
+.mission-1 h1{
+    transform: rotate(90deg);
+    background: linear-gradient( to bottom, transparent 50%, #EEDCC9 50%); 
+    
+}
+
+.inn-img{
+    width:756px;
+    height: 522px;
+    position: absolute;
+    left:40px;
+    top:40px;
+}
+.in{
+    width:775px;
+    height: 620px;
+}
+.vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 100px;
+}
+.inner-img{
+    position: absolute;
+    width: 717px;
+    height:529px;
+    left:-30px;
+    top:-60px;
+    
+}
+.first-img{
+    width: 747px;
+    height:529px;
+}
+.imagess{
+margin: 50px;
+}
+.vision h2{
+    text-align: right;
+    background: linear-gradient( to bottom, transparent 50%, #EEDCC9 50%); 
+    width:150px;
+    
+   
+    
+}
+.inn-img-cont, .imagess{
+    position: relative;
+}
+.heading{
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 /* Caption text 
 .text {
@@ -364,9 +450,7 @@ img {vertical-align: middle;}
 .text{
     text-align: center;
 }
-.inner-img{
-    border-radius: 50%;
-}
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -413,10 +497,7 @@ img {vertical-align: middle;}
     /*padding: 30px;*/
     
 }
-.inner-img{
-    width: 420px;
-    height:420px;
-}
+
 .cont-1,.cont-2{
     background-size: 270px 270px;
 }
@@ -1037,5 +1118,167 @@ footer p, footer a, footer h2{
 @media only screen and (max-width:402px){
     .modal-flex input{
         width:200px;
+    }
+}
+@media only screen and (max-width:1163px){
+    .inner-img{
+        width:617px;
+        height:429px;
+    }
+    .first-img{
+        width: 647px;
+        height: 429px;
+    }
+}
+@media only screen and (max-width:1104px){
+    .about-us{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .con{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width:1056px){
+    .mission-1 h1{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width:1050px){
+    .inn-img{
+        width:656px;
+        height: 422px;
+    }
+    .in{
+        width:675px;
+        height:520px;
+    }
+}
+@media only screen and (max-width:832px){
+    .inn-img{
+        width:556px;
+        height: 322px;
+    }
+    .in{
+        width:575px;
+        height:420px;
+    }
+    .inner-img{
+        width:517px;
+        height:329px;
+    }
+    .first-img{
+        width: 547px;
+        height: 329px;
+    }
+
+}
+@media only screen and (max-width:751px){
+    .inn-img{
+        width:456px;
+        height: 222px;
+    }
+    .in{
+        width:475px;
+        height:320px;
+    }
+    .inner-img{
+        width:417px;
+        height:229px;
+    }
+    .first-img{
+        width: 447px;
+        height: 229px;
+    }
+
+}
+@media only screen and (max-width:832px){
+    .inn-img{
+        width:356px;
+        height: 222px;
+    }
+    .in{
+        width:375px;
+        height:290px;
+    }
+    .inner-img{
+        width:317px;
+        height:129px;
+    }
+    .first-img{
+        width: 327px;
+        height: 109px;
+    }
+    .con{
+        padding: 30px;
+    }
+}
+@media only screen and (max-width:613px){
+    .mission p{
+        padding:20px;
+        margin: 20px;
+    }
+}
+@media only screen and (max-width:648px){
+    .mission-1 h1{
+        margin: 10px;
+    }
+}
+@media only screen and (max-width:506px){
+    .mission-1{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    .mission-1 h1{
+        transform: rotate(0deg);
+        width:200px;
+    }
+}
+@media only screen and (max-width:482px){
+    .inn-img{
+        width:356px;
+        height: 222px;
+        left:0;
+        top:0;
+    }
+    .in{
+        width:375px;
+        height:200px;
+    }
+    .inner-img{
+        width:317px;
+        height:129px;
+        left:0;
+        top:0;
+    }
+    .first-img{
+        width: 327px;
+        height: 108px;
+    }
+    .con{
+        padding: 30px;
+    }
+}
+@media only screen and (max-width:447px){
+    .about-us .cent{
+        text-align: center;
+        
+    }
+    .about-us h1{
+        width: 100%;
+        background-size: 0px;
+
+    }
+}
+@media only screen and (max-width:393px){
+    .inn-img{
+        width:256px;
+        height:222px;
+    }
+    .in{
+        width:275px;
+        height: 200px;
     }
 }

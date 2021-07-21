@@ -88,7 +88,8 @@
 
      
     </nav>
-    <div class="intro reveal">
+    <div class="main-container">
+    <div class="intro ">
         <h1 style="text-align:center;">Online Banking</h1><br>
         <h3 style="text-align:center;">made faster your business</h3><br>
         <p style="text-align:center;">Open's online bank account comes with a VISA business card that combines banking, payments, accounting & expense management, in one place. One Open account to manage it all.</p><br>
@@ -97,7 +98,7 @@
 
     </div>
 
-    <div class="mockup reveal">
+    <div class="mockup ">
     </div>
      <br>
     <div class="cont-3 reveal">
@@ -198,14 +199,23 @@
    </div>
 
    <div class="cont-13 reveal">
-   <div class="flexed"><img src="Icons/Open Monet assets/s1.png"><br><div class="inned"><img src="Icons/Open Monet assets/Group 12760.png"></div><p>Create multiple 
+   <div class="flexed"><img src="Icons/Open Monet assets/Group 12762.png"><br><div><b>Create multiple 
     cards for different
-     teams</p></div>
-   <div class="flexed"><img src="Icons/Open Monet assets/s2.png"></div>
-   <div class="flexed"><img src="Icons/Open Monet assets/s3.png"></div>
-   <div class="flexed"><img src="Icons/Open Monet assets/s4.png"></div>
-   <div class="flexed"><img src="Icons/Open Monet assets/s5.png"></div>
-   <div class="flexed"><img src="Icons/Open Monet assets/s6.png"></div>
+     teams</b></div></div>
+   <div class="flexed"><div class="h"><img src="Icons/Open Monet assets/Group 12763(1).png" ></div><div><b>Set limits & assign 
+    virtual cards to
+     teammates</b></div><br><img src="Icons/Open Monet assets/Group 12763.png" class="b"></div>
+   <div class="flexed"><img src="Icons/Open Monet assets/Group 12764.png"><br><div><b>Make subscription 
+    payments like 
+    AWS or Google 
+    Ads</b></div></div>
+   <div class="flexed"><div class="h"><img src="Icons/Open Monet assets/Group 12765(1).png" ></div><div><b>Scan & upload 
+    receipts easily
+     via WhatsApp</b></div><br><img src="Icons/Open Monet assets/Group 12765.png" class="b"></div>
+   <div class="flexed"><img src="Icons/Open Monet assets/Group 12766.png"><br><div><b>Manage approval
+    flow & reimbursements 
+    in one place</b></div></div>
+   <div class="flexed"><div class="h"><img src="Icons/Open Monet assets/Group 12767(1).png" ></div><div><b>File expense reports in minutes</b></div><br><img src="Icons/Open Monet assets/Group 12767.png" class="b"></div>
    </div>
    
    <div class="cont-14 reveal">
@@ -238,6 +248,7 @@
         <div class="search-bar"><input name="email" id="email" type="email" placeholder="Enter your email" required><button type="submit" name="submit"><div class="btns">Submit</div></button></div>
         <br>
     </form>
+</div>
 </div>
     <footer>
         <div class="footer-links ">
@@ -288,5 +299,38 @@
        </footer>
        <button onclick="gototop()" id="top">&#128285;</button>
        <script src='src/script.js'></script>
+       <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTYSaPKuJ2at9mG0XpxScs-zypRZ9PCoQGvoQP5Gw0jQH09fhW6NVgKXSyXws5wIeI7w/exec'
+        const form = document.forms['Instant Call']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!'),form.reset())
+            .catch(error => console.error('Error!', error.message))
+        })
+        const scriptUL = 'https://script.google.com/macros/s/AKfycbyxAiHHroezV-X2VgJXfYozRM255ZOHyJf0vd58Q0--_RS5HZrINmY0e39rUn6COf0RBw/exec'
+        const Newsletter = document.forms['Newsletter']
+
+        Newsletter.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptUL, { method: 'POST', body: new FormData(Newsletter)})
+            .then(response => console.log('Success!'),Newsletter.reset())
+            .catch(error => console.error('Error!', error.message))
+        })
+        function closeSelf (f) {
+        var modal = document.getElementById("modal");
+        f.submit();
+        modal.style.display="none";
+        
+        }
+        function closeSelfres (f) {
+        var modal = document.getElementById("modal-res");
+        modal.style.display="none";
+        
+       
+        
+        }
+    </script>
     </body>
     </html>
