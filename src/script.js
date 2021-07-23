@@ -106,3 +106,28 @@ function gototop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+document.getElementById('ec').addEventListener('click',()=>{
+    window.location.href="e-commerce-solutions.html";
+});
+document.getElementById('mb').addEventListener('click',()=>{
+  window.location.href="mobile-app-development.html";
+});
+document.getElementById('gh').addEventListener('click',()=>{
+  window.location.href="graphic.html";
+});
+document.getElementById('ai').addEventListener('click',()=>{
+  window.location.href="ai-ml.html";
+});
+document.getElementById('cs').addEventListener('click',()=>{
+  window.location.href="consultancy-services.html";
+});
+document.getElementById('es').addEventListener('click',()=>{
+  window.location.href="educational-services.html";
+});
+document.getElementById('cls').addEventListener('click',()=>{
+  window.location.href="cloud-solutions.html";
+});
+document.getElementById('cos').addEventListener('click',()=>{
+  window.location.href="corporate-services.html";
+});
