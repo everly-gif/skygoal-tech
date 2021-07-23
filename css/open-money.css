@@ -585,7 +585,9 @@ footer p, footer a, footer h2{
     border:1px solid #D8445C;
     transition: all .3s ease-in-out;
 }
-
+.intro h4{
+   
+} 
 
 /*Responsiveness*/
 @media only screen and (max-width:1033px){
