@@ -309,6 +309,21 @@ nav{
     margin-bottom:15px;
 }
 /* Our work */
+.inner-div{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:50px;
+}
+.grid-container{
+    padding:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-div{
+    padding:20px;
+}
+/* Work */
 .our-work{
     padding: 30px;
 }
@@ -337,15 +352,9 @@ nav{
     margin-top: 5px;
     text-transform: uppercase;
 }
-.cards a{
+.card a{
     color:#0066FF;
     margin-top: 5px;
-    
-}
-.inner-div{
-    padding:20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
     
 }
 .ow-grid{
@@ -354,9 +363,15 @@ nav{
     align-items: center;
     justify-self: center;
 }
-.cards{
+.card{
     margin:10px;
     margin-bottom:40px;
+}
+.inn-div{
+    padding:20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
 }
 /*form css starts*/
 
