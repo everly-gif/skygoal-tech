@@ -4,6 +4,7 @@ window.onload=function(){
     toggleButton.addEventListener('click', () => {
         nlinks.classList.toggle('act');
     })
+  }
     // var modal = document.getElementById("modal");
 
     // // Get the button that opens the modal
@@ -28,66 +29,66 @@ window.onload=function(){
     //     modal.style.display = "none";
     // }
     // }
-    var modal_res = document.getElementById("modal-res");
+//     var modal_res = document.getElementById("modal-res");
     
 
-    // Get the button that opens the modal
-    var btn_res = document.getElementById("show");
-    var n=document.getElementById("n");
+//     // Get the button that opens the modal
+//     var btn_res = document.getElementById("show");
+//     var n=document.getElementById("n");
 
-    // Get the <span> element that closes the modal
-    var span_res = document.getElementById("close-2");
+//     // Get the <span> element that closes the modal
+//     var span_res = document.getElementById("close-2");
 
-    // When the user clicks the button, open the modal 
-    btn_res.onclick = function() {
-    modal_res.style.display = "block";
-    n.style.zIndex="0";
-    }
+//     // When the user clicks the button, open the modal 
+//     btn_res.onclick = function() {
+//     modal_res.style.display = "block";
+//     n.style.zIndex="0";
+//     }
 
-    // When the user clicks on <span> (x), close the modal
-    span_res.onclick = function() {
-    document.getElementById("form").reset();
-    modal_res.style.display = "none";
+//     // When the user clicks on <span> (x), close the modal
+//     span_res.onclick = function() {
+//     document.getElementById("form").reset();
+//     modal_res.style.display = "none";
     
-    }
+//     }
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-    if (event.target == modal_res) {
-        modal_res.style.display = "none";
-    }
-    }
+//     // When the user clicks anywhere outside of the modal, close it
+//     window.onclick = function(event) {
+//     if (event.target == modal_res) {
+//         modal_res.style.display = "none";
+//     }
+//     }
     
 
   
-}
-var slideIndex = 1;
-showSlides(slideIndex);
+// }
+// var slideIndex = 1;
+// showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" acts", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
+// function showSlides(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("dot");
+//   if (n > slides.length) {slideIndex = 1}    
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";  
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//       dots[i].className = dots[i].className.replace(" acts", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";  
   
-  dots[slideIndex-1].className += " acts";
-}
+//   dots[slideIndex-1].className += " acts";
+// }
 
 window.addEventListener('scroll',()=>{
     let anime=document.querySelectorAll('.reveal');

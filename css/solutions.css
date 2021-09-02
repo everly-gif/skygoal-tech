@@ -479,7 +479,7 @@ footer p, footer a, footer h2{
     transition: all .3s ease-in-out;
 }
 /*Responsiveness*/
-@media only screen and (max-width:1033px){
+@media only screen and (max-width:1319px){
     .toggle-button{
         display: flex;
     }

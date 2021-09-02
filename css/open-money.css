@@ -593,7 +593,7 @@ footer p, footer a, footer h2{
 }
 
 /*Responsiveness*/
-@media only screen and (max-width:1033px){
+@media only screen and (max-width:1319px){
     .toggle-button{
         display: flex;
     }
@@ -858,5 +858,47 @@ footer p, footer a, footer h2{
     }
     .grid{
         grid-template-columns: auto;
+    }
+}
+@media only screen and (max-width:1210px){
+    .modal-flex input{
+        width:300px;
+    }
+    .modal{
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+}
+@media only screen and (max-width:702px){
+    .modal-flex input{
+        width:250px;
+    }
+}
+@media only screen and (max-width:646px){
+    .modal-flex input{
+        width:200px;
+    }
+}
+@media only screen and (max-width:594px){
+    .a-img{
+        width:200px;
+        height:200px;
+    }
+    .modal-flex form{
+        padding-top:10px;
+    }
+}
+@media only screen and (max-width:474px){
+    .modal-flex{
+        flex-direction: column;
+    }
+    .modal-flex input{
+        width:300px;
+    }
+}
+@media only screen and (max-width:402px){
+    .modal-flex input{
+        width:200px;
     }
 }

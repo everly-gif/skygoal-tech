@@ -24,9 +24,7 @@ window.addEventListener('scroll',()=>{
     } 
  
 });
- document.addEventListener("contextmenu", function(e){
-     e.preventDefault();
- }, false);
+
 window.onload=function(){
     const toggleButton=document.getElementsByClassName('toggle-button')[0];
     const nlinks= document.getElementsByClassName('r-nav')[0];

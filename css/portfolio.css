@@ -521,7 +521,7 @@ footer p, footer a, footer h2{
     transition: all .3s ease-in-out;
 }
 /* Responsiveness */
-@media only screen and (max-width:1033px){
+@media only screen and (max-width:1319px){
     .toggle-button{
         display: flex;
     }
@@ -599,13 +599,13 @@ footer p, footer a, footer h2{
     }
 }
 @media only screen and (max-width:1308px){
-    .cards img{
+    .card img{
         width:300px;
         height:170px;
     }
 
 }
-@media only screen and (max-width:998px){
+@media only screen and (max-width:830px){
     .inner-div{
         grid-template-columns: auto auto;
     }
@@ -620,10 +620,40 @@ footer p, footer a, footer h2{
         width:100%;
     }
 }
+@media only screen and (max-width:998px){
+    .inn-div{
+        grid-template-columns: auto auto;
+    }
+}
 @media only screen and (max-width:706px){
-    .inner-div{
+    .inn-div{
         grid-template-columns: auto;
     }
+}
+@media only screen and (max-width:610px){
+   .inner-div{
+       grid-template-columns: auto;
+   }
+}
+@media only screen and (max-width:430px){
+    .grid-container{
+        padding:10px;
+    }
+}
+@media only screen and (max-width:330px){
+    .grid-container{
+        padding: 5px;
+    }
+}
+@media only screen and (max-width:1210px){
+    .modal{
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+    .modal-flex input{
+        width:300px;
+    }
+
 }
 @media only screen and (max-width:941px){
     .join-form{

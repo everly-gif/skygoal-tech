@@ -22,6 +22,53 @@ html{
     padding: 2px 20px;
     
 }
+#contact:hover{
+    border: 1px solid #2A2742;
+    background-color: #FFFAFA;
+    color:#2A2742;
+    
+    
+}
+.r-nav ul li a:hover{
+    color:#D8445C;
+}
+.hover, .hover-act{
+    background-color: #D8445C;
+    height:5px;
+    border-radius:0px 0px 20px 20px;
+    /* padding: 8px; */
+    margin-top: 0;
+    position: absolute;
+    width:0;
+    left:0;
+    top:0;
+    transition:all .3s ease;
+    
+}
+.hover hr{
+    
+    border-top: 1px solid #FFF;
+    margin-top: 0;
+}
+
+.r-nav li .hover{
+    transition: all .3s ease;
+    }
+ .m-links{
+        position: relative;
+    }
+.r-nav li{
+    margin:0;
+}
+.contact-form input,textarea{
+  padding:10px;
+  border-radius: 5px;
+  border: none;
+  outline:none;
+  border: 1px solid black;
+  margin:10px;
+  width:400px;
+}
 .r-nav ul{
     margin: 0;
     padding: 0;
@@ -486,7 +533,7 @@ footer p, footer a, footer h2{
     font-size: 30px;
 }
 /*Responsiveness*/
-@media only screen and (max-width:1033px){
+@media only screen and (max-width:1319px){
     .toggle-button{
         display: flex;
     }
@@ -647,6 +694,17 @@ footer p, footer a, footer h2{
     }
 
 }
+@media only screen and (max-width:1274px){
+    .flexing{
+        flex-wrap: wrap;
+    }
+    .contact-form{
+        margin-bottom:20px;
+    }
+    .flexing:nth-child(1){
+        width:80%;
+    } 
+}
 @media only screen and (max-width:400px){
     .w-btn,.p-btn{
         padding:12px 30px;
@@ -722,5 +780,26 @@ footer p, footer a, footer h2{
 @media only screen and (max-width:402px){
     .modal-flex input{
         width:200px;
+    }
+}
+@media only screen and (max-width:724px){
+    
+    .flexing div:nth-child(1){
+        width:90%;
+    } 
+    .contact-form ,.flexing iframe{
+        width:90%;
+        margin-bottom:20px;
+    }
+    .form-input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:548px){
+    .form-input input,   .form-input button,   .form-input textarea{
+        width:90%;
     }
 }
